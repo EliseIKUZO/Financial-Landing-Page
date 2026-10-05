@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -174,4 +177,43 @@ nav a {
 }
 .testimonial-navigation span {
     margin: 0 10px;
+}
+.download-btn,
+.store-btn {
+    transition: 0.3s ease;
+}
+.download-btn:hover,
+.store-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+.card {
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .store-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-content {
+        flex-direction: column;
+    }
 }
